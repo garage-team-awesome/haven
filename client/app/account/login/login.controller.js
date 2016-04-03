@@ -20,6 +20,20 @@ class LoginController {
       })
       .then(() => {
         // Logged in, redirect to home
+        var translationTable = {
+          "to": "en",
+          "from": "en"
+        }
+
+        switch (this.user.email) {
+          case "adar@example.com":
+            translationTable.to = "fa";
+            break;
+          default:
+            translationTable.from = "fa";
+            break
+        }
+        angular.module('havenApp')['translationTable'] = translationTable;
         this.$state.go('main');
       })
       .catch(err => {

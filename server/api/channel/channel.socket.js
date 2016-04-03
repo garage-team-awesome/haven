@@ -3,6 +3,7 @@
  */
 
 'use strict';
+var googleTranslate = require('google-translate')('AIzaSyDtE3oif_9mIi20aU8Fva2QLgMJcuiNwa0');
 
 var ChannelEvents = require('./channel.events');
 

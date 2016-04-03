@@ -91,6 +91,7 @@ export function create(req, res) {
       user: req.user,
       createdAt: new Date()
     });
+    console.log(newMessage);
     channel.messages.push(newMessage);
     MessageEvents.emit('save', { message: newMessage, channelId: channel._id });
     return channel.save();
