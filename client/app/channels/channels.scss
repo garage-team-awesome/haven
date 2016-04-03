@@ -17,6 +17,13 @@
   float: left;
   margin: 10px;
 }
+.messhead {
+  text-align: center;
+  vertical-align: text-bottom;
+  h3 {
+    vertical-align: text-bottom;
+  }
+}
 .animate-messages {
   &.ng-enter {
     animation: fadeInRight 0.3s;
