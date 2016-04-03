@@ -26,9 +26,24 @@ angular.module('havenApp')
         var affectedChannel = channelService.findById(channelId);
         var oldMessage = _.find(affectedChannel.messages, {_id: message._id});
         var index = affectedChannel.messages.indexOf(oldMessage);
+        // translate to my language of choice based upon who I am
+        var newMessage = "";
 
-        // replace oldMessage if it exists
-        // otherwise just add message to the collection
+        var translationTable = angular.module('havenApp').translationTable;
+        // SEND request to google translate
+        var APIKEY = "AIzaSyDtE3oif_9mIi20aU8Fva2QLgMJcuiNwa0";
+        $.ajaxSetup({"async": false});
+        var res = $.get("https://www.googleapis.com/language/translate/v2" +
+          "?key=" + APIKEY +
+          "&source=" + translationTable.from +
+          "&target=" + translationTable.to +
+          "&q=" + message.text,
+          function(data) {
+            newMessage = data["data"]["translations"][0]["translatedText"];
+          }
+        );
+        message.text = newMessage;
+        // replace oldMessage if it exists        // otherwise just add message to the collection
         if (oldMessage) {
           affectedChannel.messages.splice(index, 1, message);
         } else {
