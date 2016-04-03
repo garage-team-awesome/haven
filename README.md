@@ -1,9 +1,9 @@
 # haven
 
-Haven
+Haven is set up for a refugee by an organization.  It allows the organization to provide information and assistance to the refugee.  It also allows the refugee to access this information through a simple, language independent interface.  Translation is built in to the application for easy communication between the agency and the refugee.  This application will save the agency time and put control into hands of the refugee. 
 
 ## User Story
- Faatimah is from Syria.  Her home was destroyed by ISIS, and an organization helped her get to the United States.  She's now in a hotel with nobody to call, no knowledge of the language and no understanding of how to get anything done within a new culture.  That's where Haven comes in.  It's designed with a language agnostic navigation system and automatic translation built in to every aspect of the application.  Haven helps Faatimah figure out who she can go to for help getting her new life set up, and connects her directly to those people.
+ Faatimah is from Syria.  Her home was destroyed by ISIS, and an organization helped her get to the United States.  She's now in an apartment with nobody to call, no knowledge of the language and no understanding of how to get anything done within a new culture.  That's where Haven comes in.  It's designed with a language agnostic navigation system and automatic translation built in to every aspect of the application.  Haven helps Faatimah figure out who she can go to for help getting her new life set up, and connects her directly to those people.
  
 ![One](./readme/1.png)
 ![Two](/readme/2.png)
