@@ -3,7 +3,14 @@
   cursor: pointer;
   cursor: hand;
 }
+.headshot {
+  float: left;
+  width: 25%;
+}
+.detail {
+ float: right;
 
+}
 .animate-messages {
   &.ng-enter {
     animation: fadeInRight 0.3s;

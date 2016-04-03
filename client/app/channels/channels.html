@@ -6,21 +6,26 @@
            ng-click="vm.setSelected(channel)">
         <div class="panel-heading">
           <h3 class="panel-title">
-            <span ng-show="vm.isSelected(channel)" class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{ channel.name }}
+            <span ng-show="vm.isSelected(channel)" class="glyphicon glyphicon-ok" aria-hidden="true"></span>{{ channel.name }}
           </h3>
         </div>
         <div class="panel-body">
+        <div class="headshot">
+        <img src="{{channel.imageurl}}" alt="{{channel.name }}" class="img-responsive">
+        </div>
+        <div class="detail">
           <dl class="dl-horizontal">
             <dt>Description</dt><dd>{{ channel.description }}</dd>
             <dt>Active</dt><dd>{{ channel.active }}</dd>
             <dt>Owner</dt><dd>{{ channel.owner.name }}</dd>
             <dt>Messages</dt><dd><span class="badge" animate-on-change='channel.messages.length'>{{ channel.messages.length }}</span></dd>
           </dl>
+          </div>
         </div>
       </div>
     </article>
     <article class="col-md-6" style="height: 400px; overflow-y: scroll;">
-      <h3>Channel {{ vm.selectedChannel.name }}</h3>
+      <h3>{{ vm.selectedChannel.name }}</h3>
       <form>
         <textarea class="form-control"
                   rows="3"

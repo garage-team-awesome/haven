@@ -89,6 +89,7 @@ function createChannels(users) {
       {
         name: 'Laura',
         description: 'caseworker',
+        imageurl: '/assets/images/laura.png',
         active: true,
         owner: users[0]._id,
         messages: [
@@ -99,6 +100,7 @@ function createChannels(users) {
       {
         name: 'Stanley',
         description: 'Doctor',
+        imageurl: '/assets/images/stanley.png',
         active: true,
         owner: users[0]._id,
         messages: [
@@ -109,6 +111,7 @@ function createChannels(users) {
       {
         name: 'Henrietta',
         description: 'Language Instructor',
+        imageurl: '/assets/images/henrietta.png',
         active: true,
         owner: users[1]._id,
         messages: [
