@@ -44,15 +44,30 @@ User.find({}).removeAsync()
   .then(() => {
     User.createAsync({
       provider: 'local',
-      name: 'Test User',
-      email: 'test@example.com',
-      password: 'test'
+      name: 'Adar',
+      email: 'adar@example.com',
+      password: 'refugee'
+    }, {
+      provider: 'local',
+      name: 'Laura',
+      email: 'lw@caseworker.com',
+      password: 'caseworker'
+    }, {
+      provider: 'local',
+      name: 'Stanley',
+      email: 'sl@doctor.com',
+      password: 'doctor'
+    }, {
+      provider: 'local',
+      name: 'Henrietta',
+      email: 'hw@language.com',
+      password: 'language'
     }, {
       provider: 'local',
       role: 'admin',
       name: 'Admin',
-      email: 'admin@example.com',
-      password: 'admin'
+      email: 'john@johnkirkley.com',
+      password: 'passages'
     })
     .then(() => {
       console.log('finished populating users');
@@ -72,33 +87,33 @@ function createChannels(users) {
     let now = new Date();
     return Channel.create([
       {
-        name: 'Classroom',
-        description: 'Classroom discussion',
+        name: 'Laura',
+        description: 'caseworker',
         active: true,
         owner: users[0]._id,
         messages: [
-          { text: 'First message.',  createdAt: now, user: users[0]._id },
-          { text: 'Second message.', createdAt: now, user: users[1]._id }
+          { text: 'How can I get to your office.',  createdAt: now, user: users[0]._id },
+          { text: 'Take the 53 to Decatur Station', createdAt: now, user: users[1]._id }
         ]
       },
       {
-        name: 'Outcomes',
-        description: 'I Need a job!',
+        name: 'Stanley',
+        description: 'Doctor',
         active: true,
         owner: users[0]._id,
         messages: [
-          { text: 'Third message.',  createdAt: now, user: users[0]._id },
-          { text: 'Fourth message.', createdAt: now, user: users[1]._id }
+          { text: 'My child has a fever',  createdAt: now, user: users[0]._id },
+          { text: 'Go to the pharmact to fufill this prescription', createdAt: now, user: users[2]._id }
         ]
       },
       {
-        name: 'Resources',
-        description: 'Where can I get more info?',
+        name: 'Henrietta',
+        description: 'Language Instructor',
         active: true,
         owner: users[1]._id,
         messages: [
-          { text: 'Fifth message.', createdAt: now, user: users[0]._id },
-          { text: 'Sixth message.', createdAt: now, user: users[1]._id }
+          { text: 'What does yall mean' , createdAt: now, user: users[0]._id },
+          { text: 'you all', createdAt: now, user: users[3]._id }
         ]
       }
     ]);
