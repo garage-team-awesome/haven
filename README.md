@@ -7,7 +7,7 @@ Haven
  
 ![One](./readme/1.png)
 ![Two](/readme/2.png)
-![Three](/readme/1.png)
+![Three](/readme/3.png)
 
 ## Getting Started
 
