@@ -1,7 +1,7 @@
 $dark-brown: rgba(19, 13, 7, 0.90);
 $light-brown: rgba(236, 214, 125, 0.54);
 body{
-  background: #fdf6e3;
+  background: white;
   font-family: "Lato", sans-serif;
   margin: 0;
   font-weight: normal;
@@ -17,7 +17,7 @@ body{
 }
 
 body{
-  background: #fdf6e3;
+  background: white;
   font-family: "Lato", sans-serif;
   margin: 0;
   font-weight: normal;
@@ -59,7 +59,7 @@ div.navbar {
   color: #F5F5F5;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  background: #4393B9;
+  background: white;
 }
 
 .circle1 {
@@ -98,8 +98,9 @@ div.navbar {
 }
 
 #rightHalf {
-   width: 50%;
+   width: 100%;
    position: absolute;
    right: 0px;
    height: 100vh;
+   background-color: white;
 }
