@@ -12,6 +12,7 @@
 import _ from 'lodash';
 import Message from './message.model';
 import Channel from '../channel/channel.model';
+var MessageEvents = require('./message.events');
 
 function respondWithResult(res, statusCode) {
   statusCode = statusCode || 200;
@@ -91,6 +92,7 @@ export function create(req, res) {
       createdAt: new Date()
     });
     channel.messages.push(newMessage);
+    MessageEvents.emit('save', { message: newMessage, channelId: channel._id });
     return channel.save();
   })
   .then(respondWithResult(res, 201))

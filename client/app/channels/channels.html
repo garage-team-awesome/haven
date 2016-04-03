@@ -15,7 +15,7 @@
             <dt>Description</dt><dd>{{ channel.description }}</dd>
             <dt>Active</dt><dd>{{ channel.active }}</dd>
             <dt>Owner</dt><dd>{{ channel.owner.name }}</dd>
-            <dt>Messages</dt><dd>{{ channel.messages.length }}</dd>
+            <dt>Messages</dt><dd><span class="badge" animate-on-change='channel.messages.length'>{{ channel.messages.length }}</span></dd>
           </dl>
         </div>
       </div>

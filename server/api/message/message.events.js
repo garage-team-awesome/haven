@@ -20,7 +20,7 @@ var events = {
 // Register the event emitter to the model events
 for (var e in events) {
   var event = events[e];
-  Message.schema.post(e, emitEvent(event));
+  //Message.schema.post(e, emitEvent(event));
 }
 
 function emitEvent(event) {

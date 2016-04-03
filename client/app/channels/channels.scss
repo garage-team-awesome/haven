@@ -12,3 +12,13 @@
     animation: fadeOutLeft 0.3s;
   }
 }
+[animate-on-change] {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  &.changed {
+    animation: shake 0.5s;
+    background-color: red;
+    transition: none;
+    -webkit-transition: none;
+  }
+}
