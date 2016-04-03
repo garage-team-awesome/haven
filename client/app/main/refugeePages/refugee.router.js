@@ -3,19 +3,12 @@
 angular.module('havenApp')
   .config(function($stateProvider) {
     $stateProvider
-      .state('chat', {
-        url: '/chat',
-        templateUrl: 'app/main/refugeePages/chat.template.html',
-        controller: 'ChatController',
-        controllerAs: 'vm',
-        authenticate: 'user'
-      })
       .state('home', {
         url: '/home',
         templateUrl: 'app/main/refugeePages/home.template.html',
         controller: 'HomeController',
-        controllerAs: 'vm'
-        // authenticate: 'user'
+        controllerAs: 'vm',
+        authenticate: 'user'
       })
       .state('medical', {
         url: '/medical',
