@@ -49,9 +49,9 @@ User.find({}).removeAsync()
       password: 'refugee'
     }, {
       provider: 'local',
-      name: 'Laura',
-      email: 'lw@caseworker.com',
-      password: 'caseworker'
+      name: 'Stacy',
+      email: 'stacy@translator.com',
+      password: 'translator'
     }, {
       provider: 'local',
       name: 'Stanley',
@@ -87,36 +87,14 @@ function createChannels(users) {
     let now = new Date();
     return Channel.create([
       {
-        name: 'Laura',
-        description: 'caseworker',
-        imageurl: '/assets/images/laura.png',
+        name: 'Stacy',
+        description: 'translator',
+        imageurl: '/assets/images/stacey.png',
         active: true,
         owner: users[0]._id,
         messages: [
           { text: 'How can I get to your office.',  createdAt: now, user: users[0]._id },
           { text: 'Take the 53 to Decatur Station', createdAt: now, user: users[1]._id }
-        ]
-      },
-      {
-        name: 'Stanley',
-        description: 'Doctor',
-        imageurl: '/assets/images/stanley.png',
-        active: true,
-        owner: users[0]._id,
-        messages: [
-          { text: 'My child has a fever',  createdAt: now, user: users[0]._id },
-          { text: 'Go to the pharmact to fufill this prescription', createdAt: now, user: users[2]._id }
-        ]
-      },
-      {
-        name: 'Henrietta',
-        description: 'Language Instructor',
-        imageurl: '/assets/images/henrietta.png',
-        active: true,
-        owner: users[1]._id,
-        messages: [
-          { text: 'What does yall mean' , createdAt: now, user: users[0]._id },
-          { text: 'you all', createdAt: now, user: users[3]._id }
         ]
       }
     ]);
