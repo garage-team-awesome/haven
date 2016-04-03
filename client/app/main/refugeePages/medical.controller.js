@@ -7,5 +7,5 @@ class MedicalController {
 
 }
 
-angular.module('awesomeAppApp')
+angular.module('havenApp')
   .controller('MedicalController', MedicalController);

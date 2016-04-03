@@ -8,5 +8,5 @@ class HomeController {
 
 }
 
-angular.module('awesomeAppApp')
+angular.module('havenApp')
   .controller('HomeController', HomeController);

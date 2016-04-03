@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('awesomeAppApp')
+angular.module('havenApp')
   .config(function($stateProvider) {
     $stateProvider
       .state('chat', {

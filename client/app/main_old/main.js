@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 
 angular.module('havenApp')
   .config(function($stateProvider) {
@@ -10,3 +10,4 @@ angular.module('havenApp')
         controllerAs: 'main'
       });
   });
+*/

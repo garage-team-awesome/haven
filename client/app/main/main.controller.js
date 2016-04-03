@@ -33,7 +33,7 @@ class MainController {
   }
 }
 
-angular.module('awesomeAppApp')
+angular.module('havenApp')
   .component('main', {
     templateUrl: 'app/main/main.html',
     controller: MainController

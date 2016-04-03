@@ -7,5 +7,5 @@ class ChatController {
 
 }
 
-angular.module('awesomeAppApp')
+angular.module('havenApp')
   .controller('ChatController', ChatController);

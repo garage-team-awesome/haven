@@ -7,5 +7,5 @@ class PersonController {
 
 }
 
-angular.module('awesomeAppApp')
+angular.module('havenApp')
   .controller('PersonController', PersonController);
