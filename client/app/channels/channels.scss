@@ -11,6 +11,12 @@
  float: right;
 
 }
+.pinkie {
+  height: 64px;
+  width: 64px;
+  float: left;
+  margin: 10px;
+}
 .animate-messages {
   &.ng-enter {
     animation: fadeInRight 0.3s;
