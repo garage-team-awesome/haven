@@ -7,12 +7,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">haven</a>
+      <a href="/" class="navbar-brand"><img style="height: 50px; margin-top: -15px" src="../assets/images/nav-logo.png"></a>
     </div>
     <div collapse="nav.isCollapsed" class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav">
         <li ng-repeat="item in nav.menu" ui-sref-active="active">
-            <a ui-sref="{{item.state}}">{{item.title}}</a>
+            <a ui-sref="home">{{item.title}}</a>
         </li>
         <li ng-show="nav.isAdmin()" ui-sref-active="active"><a ui-sref="admin">Admin</a></li>
         <li ng-show="nav.isLoggedIn()" ui-sref-active="active"><a ui-sref="channels">Chat</a></li>
