@@ -6,6 +6,7 @@ var Message = require('../message/message.model');
 var ChannelSchema = new mongoose.Schema({
   name: String,
   description: String,
+  imageurl: String,
   active: Boolean,
   owner: { type: mongoose.Schema.ObjectId, ref: 'User' },
   messages: [Message.schema]
