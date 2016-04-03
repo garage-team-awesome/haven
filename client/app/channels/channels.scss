@@ -1,0 +1,14 @@
+.channel {
+  background: #eee;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.animate-messages {
+  &.ng-enter {
+    animation: fadeInRight 0.3s;
+  }
+  &.ng-leave {
+    animation: fadeOutLeft 0.3s;
+  }
+}
