@@ -1,3 +1,13 @@
+$dark-brown: rgba(19, 13, 7, 0.90);
+$light-brown: rgba(236, 214, 125, 0.54);
+body{
+  background: #fdf6e3;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  font-weight: normal;
+  overflow: hidden
+}
+
 .thing-form {
   margin: 20px 0;
 }
@@ -5,6 +15,37 @@
 #banner {
   border-bottom: none;
   margin-top: -20px;
+}
+
+body{
+  background: #fdf6e3;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  font-weight: normal;
+}
+
+form > button {
+  background-color: $dark-brown;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-family: "League Gothic", Impact, sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-shadow: none;
+  word-wrap: break-word;
+}
+
+div.navbar {
+  background: $dark-brown;
 }
 
 #banner h1 {
@@ -22,6 +63,44 @@
   background: #4393B9;
 }
 
+.circle1 {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  width: 75vw;
+  height: 75vw; 
+  background: black;
+  /* width and height can be anything, as long as they're equal */
+}
+
+.circle2 {
+  align-self: center;
+  top: 15vw;
+  left: 15vw;
+  border-radius: 50%;
+  width: 38vw;
+  height: 38vw; 
+  background: green;
+  /* width and height can be anything, as long as they're equal */
+}
+
 .navbar-text {
   margin-left: 15px;
+}
+
+#leftHalf {
+   background: url(../assets/images/refugeeAlone1.png);
+   background-size: auto 100%;
+   width: 50%;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   height: 100vh;
+}
+
+#rightHalf {
+   width: 50%;
+   position: absolute;
+   right: 0px;
+   height: 100vh;
 }
