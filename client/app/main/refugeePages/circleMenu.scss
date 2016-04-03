@@ -13,13 +13,13 @@ a {
 
 .item .sector {
   transition: all .1s linear;
-  fill: #f0892a;
+  fill: white;
   stroke: #111;
 }
 
 .item:hover .sector,
 .item:focus .sector {
-  fill: #eee;
+  fill: #f0892a;
 }
 
 .menu-trigger {
@@ -37,9 +37,13 @@ symbol {
 }
 
 .middleCircle {
-  fill: #6fb2e1;
+  fill: #151e47;
 }
 
 .middleCircle:hover {
-  fill: #eee;
+  fill: #151e47;
+}
+
+.menuIcons {
+  pointer-events: none;
 }
